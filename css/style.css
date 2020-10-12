@@ -414,11 +414,6 @@ background-image: url(../imeges/our-advantages/diagram.svg);
     background-color: #FFFFFF;
 }
 
-.social-list-svg {
-    width: 20px;
-    height: 20px;
-}
-
 .icon-list .icon-link:hover,
 .icon-list .icon-link:focus {
     background-color: var(--accent-text-color);
@@ -452,11 +447,6 @@ background-image: url(../imeges/our-advantages/diagram.svg);
     border: 1px solid #AFB1B8;
     box-sizing: border-box;
     border-radius: 4px;
-}
-
-.clients-list-svg {
-    width: 88px;
-    height: 46px;
 }
 
 .clients-link:hover,
