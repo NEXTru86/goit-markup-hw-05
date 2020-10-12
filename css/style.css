@@ -83,8 +83,7 @@ img {
 /* HEADER */
 
 .header {
-    padding: 24px 0;
-    border: 1px solid #ECECEC;
+    padding-top: 4px;
 }
 
 .header .container {
@@ -129,8 +128,8 @@ img {
 
 .navigation-list-link {
     display: block;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .navigation-list-link,
@@ -139,6 +138,10 @@ img {
     font-size: 14px;
     line-height: 1.143;
     letter-spacing: 0.02em;
+
+    transition-property: color; 
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .navigation-list-link {
@@ -160,6 +163,20 @@ img {
 
 .navigation-list-link.active {
     color: var(--accent-text-color);
+    position: relative;
+}
+
+
+
+.navigation-list-link.active::after {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    content: "";
+    width: 100%;
+    height: 4px;
+    background-color: var(--accent-text-color);
+    border-radius: 2px;
 }
 
 .address-list {
@@ -227,12 +244,16 @@ img {
     background: #2196F3;
     border-radius: 4px;
     border-style: none;
+
+    transition-property: color, background-color; 
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-btn:hover,
 .hero-btn:focus {
     color: var(--active-text-btn-dark-theme);
-    background: #FFFFFF;
+    background-color: #FFFFFF;
 }
 
 /* END MAIN SECTION */
@@ -412,6 +433,10 @@ background-image: url(../imeges/our-advantages/diagram.svg);
     height: 44px;
     border-radius: 50%;
     background-color: #FFFFFF;
+
+    transition-property: background-color; 
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-list .icon-link:hover,
@@ -447,6 +472,10 @@ background-image: url(../imeges/our-advantages/diagram.svg);
     border: 1px solid #AFB1B8;
     box-sizing: border-box;
     border-radius: 4px;
+
+    transition-property: border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-link:hover,
@@ -487,6 +516,10 @@ background-image: url(../imeges/our-advantages/diagram.svg);
     background-color: #F5F4FA;
     border-style: none;
     border-radius: 4px;
+
+    transition-property: color, background-color, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-filter-btn:hover,
@@ -515,6 +548,10 @@ background-image: url(../imeges/our-advantages/diagram.svg);
 
 .project-item-link {
     display: block;
+
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .project-item-link:hover,
@@ -603,6 +640,15 @@ background-image: url(../imeges/our-advantages/diagram.svg);
     background: #2F303A;
 }
 
+.footer-list-address,
+.footer-list-mail,
+.footer-list-tel {
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
 .footer-list-address:hover,
 .footer-list-address:focus,
 .footer-list-mail:hover,
@@ -646,6 +692,9 @@ background-image: url(../imeges/our-advantages/diagram.svg);
     background-color:rgba(255, 255, 255, 0.1);
     --color2: var(--text-btn-dark-theme);
 
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-item .icon-link:hover,
